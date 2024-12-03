@@ -9,88 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lucida+Handwriting&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts -6/css/all.css">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
+    
+    <link rel="stylesheet" href="styles.css">
 
-        .header {
-            background: #22b1f8;
-            color: white;
-            text-align: center;
-            padding: 50px 0;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-links ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-
-        .text-box h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .hero-btn {
-            text-decoration: none;
-            color: white;
-            background: #1a91d6;
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-
-        .home h2 {
-            font-family: 'Lucida Handwriting', cursive;
-            font-size: 3rem;
-            text-align: center;
-            margin: 50px 0;
-        }
-
-        section {
-            padding: 50px;
-        }
-
-        .row {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .course-col {
-            flex: 1;
-            margin: 10px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            text-align: center;
-        }
-
-        footer {
-            background: #22b1f8;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-    </style>
 </head>
 <body>
     <!-- Header Section -->
     <section class="header">
         <nav>
-            <a href="index.html"><img src="pics/logo.png" alt="Safe Nest Logo"></a>
+            <!--<a href="index.html"><img src="pics/logo.png" alt="Safe Nest Logo"></a> -->
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
@@ -104,7 +31,7 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <div class="text-box">
+        <div class="text-box" style="color: white;">
             <h1>Welcome to Safe Nest</h1>
             <p>Your trusted platform for safety and care.</p>
             <a href="#about" class="hero-btn">Learn More</a>

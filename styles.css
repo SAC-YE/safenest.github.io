@@ -1,0 +1,96 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(banner.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in width/height */
+}
+
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.nav-links {
+    display: flex;                /* Enable Flexbox */
+    justify-content: center;      /* Center items horizontally */
+    align-items: center;          /* Center items vertically */
+    height: 20vh;                /* Full viewport height */
+    width: 100%;                  /* Full width of the viewport */
+    max-width: 100%;              /* Ensure it doesn't exceed the viewport width */
+}
+
+.nav-links ul {
+    list-style: none;             /* Remove bullets */
+    padding: 0;                   /* Remove default padding */
+    margin: 0;                    /* Remove default margin */
+    display: flex;                /* Align links horizontally */
+}
+
+.nav-links ul li {
+    margin: 0 15px;               /* Space between links */
+}
+
+.nav-links a {
+    text-decoration: none;        /* Remove underline */
+    color: white;                  /* Text color */
+    font-weight: bold;            /* Bold font */
+}
+
+.text-box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    text-decoration: none;
+    color: white;
+    background: #1a91d6;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.home h2 {
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin: 50px 0;
+}
+
+section {
+    padding: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.course-col {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer {
+    background: #22b1f8;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
