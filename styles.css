@@ -17,37 +17,45 @@ body {
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures padding and borders are included in width/height */
-}
-
-body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    box-sizing: border-box; /* Ensure padding and borders are included in element sizes */
 }
 
 .nav-links {
-    display: flex;                /* Enable Flexbox */
-    justify-content: center;      /* Center items horizontally */
-    align-items: center;          /* Center items vertically */
-    height: 20vh;                /* Full viewport height */
-    width: 100%;                  /* Full width of the viewport */
-    max-width: 100%;              /* Ensure it doesn't exceed the viewport width */
+    display: flex;
+    align-items: center; /* Align items vertically in the middle */
+    justify-content: space-between; /* Space out the logo and the links */
+    width: 100%;
+    padding: 10px 20px; /* Add padding for better spacing */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Center the logo vertically */
+}
+
+.logo {
+    width: 150px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .nav-links ul {
-    list-style: none;             /* Remove bullets */
-    padding: 0;                   /* Remove default padding */
-    margin: 0;                    /* Remove default margin */
-    display: flex;                /* Align links horizontally */
+    display: flex;
+    list-style: none; /* Remove default list styling */
+    margin: 0;
 }
 
 .nav-links ul li {
-    margin: 0 15px;               /* Space between links */
+    margin-left: 15px; /* Add spacing between navigation links */
 }
 
-.nav-links a {
-    text-decoration: none;        /* Remove underline */
-    color: white;                  /* Text color */
-    font-weight: bold;            /* Bold font */
+.nav-links ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set link color */
+    font-weight: bold; /* Make text bold */
+}
+
+.nav-links ul li a:hover {
+    color: #22b1f8; /* Add hover effect */
 }
 
 .text-box h1 {
@@ -62,6 +70,13 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
 }
+
+#motto {
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    margin: 50px 0;
+}
+
 
 .home h2 {
     font-family: 'Lucida Handwriting', cursive;
