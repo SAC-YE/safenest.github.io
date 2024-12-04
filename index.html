@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Nest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lucida+Handwriting&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts -6/css/all.css">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <div class="logo-container">
+                    <img src="transparentLogo.png" alt="Safe Nest Logo" class="logo">
+                </div>
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#products">PRODUCTS</a></li>
+                    <li><a href="#ethos">ETHOS</a></li>
+                    <li><a href="#team">TEAM</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contacts">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box" style="color: white;">
+        </br>
+        </br>
+        </br>
+        <h1 style="text-align: center; font-family: 'Verdana', cursive;;">Welcome to Safe Nest</h1>
+    </br>
+        <h3 id="motto">"Heating the Homeless not the Earth"</h3>
+            
+        </div>
+    </section>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <h2>"Home is where the heart is"</h2>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h1>Our Products</h1>
+        <p>Explore our innovative range designed for safety and care.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Product 1</h3>
+                <p>Details about Product 1 go here.</p>
+            </div>
+            <div class="course-col">
+                <h3>Product 2</h3>
+                <p>Details about Product 2 go here.</p>
+            </div>
+            <div class="course-col">
+                <h3>Product 3</h3>
+                <p>Details about Product 3 go here.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ethos Section -->
+    <section id="ethos">
+        <h1>Our Ethos</h1>
+        <p>We prioritize trust, innovation, and care in everything we do.</p>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <h1>Our Team</h1>
+        <p>Meet the passionate individuals behind Safe Nest.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1>About Us</h1>
+        <p>Safe Nest is committed to providing a safe and supportive community.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="contacts">
+        <h1>Our Services</h1>
+        <p>Discover how we enhance safety and well-being through our services.</p>
+    </section>
+
+    <!-- Script for Navigation Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+      
+        function showMenu() {
+            document.getElementById("navLinks").style.right = "0";
+        }
+
+        function hideMenu() {
+            document.getElementById("navLinks").style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
