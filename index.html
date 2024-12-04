@@ -1,4 +1,4 @@
-a<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,8 +17,10 @@ a<!DOCTYPE html>
     <!-- Header Section -->
     <section class="header">
         <nav>
-            <!--<a href="index.html"><img src="pics/logo.png" alt="Safe Nest Logo"></a> -->
             <div class="nav-links" id="navLinks">
+                <div class="logo-container">
+                    <img src="transparentLogo.png" alt="Safe Nest Logo" class="logo">
+                </div>
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="#home">HOME</a></li>
@@ -31,16 +33,21 @@ a<!DOCTYPE html>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
+
         <div class="text-box" style="color: white;">
-            <h1>Welcome to Safe Nest</h1>
-            <p>Your trusted platform for safety and care.</p>
-            <a href="#about" class="hero-btn">Learn More</a>
+        </br>
+        </br>
+        </br>
+        <h1 style="text-align: center; font-family: 'Verdana', cursive;;">Welcome to Safe Nest</h1>
+    </br>
+        <h3 id="motto">"Heating the Homeless not the Earth"</h3>
+            
         </div>
     </section>
 
     <!-- Home Section -->
     <section id="home" class="home">
-        <h2>Home is where the heart is</h2>
+        <h2>"Home is where the heart is"</h2>
     </section>
 
     <!-- Products Section -->
@@ -83,7 +90,7 @@ a<!DOCTYPE html>
 
     <!-- Services Section -->
     <section id="contacts">
-        <h1>Contact Us</h1>
+        <h1>Our Services</h1>
         <p>Discover how we enhance safety and well-being through our services.</p>
     </section>
 
@@ -95,6 +102,14 @@ a<!DOCTYPE html>
         }
         function hideMenu() {
             navLinks.style.right = "-200px";
+        }
+      
+        function showMenu() {
+            document.getElementById("navLinks").style.right = "0";
+        }
+
+        function hideMenu() {
+            document.getElementById("navLinks").style.right = "-200px";
         }
     </script>
 </body>
