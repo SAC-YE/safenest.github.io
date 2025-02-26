@@ -115,3 +115,61 @@ footer {
     display: flex;
   }
 }
+
+/* Team Page Styles */
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.team-member {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+}
+
+/* FAQ Page Styles */
+.faq-list {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+.faq-item {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.contact-form button {
+  display: block;
+  margin: 1rem auto;
+}
